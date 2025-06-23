@@ -1,0 +1,20 @@
+# Open interactive REPL
+mpremote connect /dev/ttyUSB0
+
+# Upload a file (e.g. main.py) to the ESP32
+mpremote connect /dev/ttyUSB0 fs cp main.py :
+
+# Download a file (e.g. main.py) from the ESP32 to local machine
+mpremote connect /dev/ttyUSB0 fs cp :main.py ./main.py
+
+# List files on the ESP32 filesystem
+mpremote connect /dev/ttyUSB0 fs ls
+
+# Run a script directly on the ESP32
+mpremote connect /dev/ttyUSB0 run main.py
+
+# Execute a one-line Python command on the ESP32
+mpremote connect /dev/ttyUSB0 exec "print('Hello ESP32')"
+
+# Soft reset the ESP32 device
+mpremote connect /dev/ttyUSB0 reset

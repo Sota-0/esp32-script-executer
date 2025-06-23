@@ -1,0 +1,29 @@
+
+DONT USE:
+
+13-14 (sd card slot 1 uses this and causes 0x107 errors)
+
+
+OLED Screen
+
+| OLED Pin | ESP32-WROVER Pin |
+| -------- | ---------------- |
+| VCC      | 3.3V             |
+| GND      | GND              |
+| CLK      | GPIO18           |
+| MOSI     | GPIO23           |
+| RES      | GPIO19           |
+| DC       | GPIO21           |
+| CS       | GPIO22           |
+
+
+Buttons
+
+
+| **Button** | **Function** | **Connected Pin** |
+| ---------- | ------------ | ----------------- |
+| Button 1   | Up           | Pin 27            |
+| Button 2   | Confirm      | Pin 25            |
+| Button 3   | Down         | Pin 26            |
+
+

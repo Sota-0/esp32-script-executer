@@ -1,0 +1,7 @@
+
+
+0x107 is a timeout error when a operation could not be completed within the timeout frame (generally 100ms ). this was the error due to the operation use pins that were already being used and caused a delay, hence: 0x107
+
+Pin Conflict issue:
+
+buttons down and confirm were using 13-14. this was conflicting with the sd card pins due to it using slot 1 for mounting. the issue for why it took so long was because i couldnt see what pins slot 1 was using as its a internet sd card module.
